@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SABANEKO || SHOPページ</title>
+    <meta name="description" content="" />
+
+    <!--アイコンの読み込み-->
+    <script
+      src="https://kit.fontawesome.com/35bc7bc00f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--cssの読み込み-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--google fontsの読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--ファーストビュー-->
+    <div class="shop-first-view" id="top">
+      <!--ヘッダー-->
+      <header class="header">
+        <div class="container">
+          <h1>
+            <a href="index.html"><i class="fas fa-cat"></i>SABANEKO</a>
+          </h1>
+
+          <!--ナビゲーションメニュー-->
+          <nav class="menu-nav pc-only">
+            <ul class="menu-ul">
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+
+          <!--ハンバーガーメニューのボタン-->
+          <div class="burger-wrapper sp-only">
+            <div class="burger-btn">
+              <span class="bar bar-top"></span>
+              <span class="bar bar-mid"></span>
+              <span class="bar bar-bottom"></span>
+            </div>
+          </div>
+
+          <!--ハンバーガーメニューの中身-->
+          <div class="nav-wrapper sp-only">
+            <nav class="header-nav">
+              <ul class="nav-list">
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!--メインタイトル-->
+      <div class="main-title">
+        <h2>SHOP</h2>
+      </div>
+
+      <!--ダウンボタン-->
+      <div class="down-btn">
+        <a href="#section"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+
+    <!--固定メニュー-->
+    <div class="floating-menu">
+      <div class="container">
+        <div class="heart-shop">
+          <a href=""><i class="fas fa-heart"></i></a>
+          <a href=""><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="floating-menu-icon">
+          <h1><i class="fas fa-cat"></i>SABANEKO</h1>
+          <p>ONLINE STORE</p>
+        </div>
+        <form method="GET" action="#" class="search pc-only">
+          <input type="text" size="25" placeholder="キーワードで検索" />
+          <input type="submit" value="&#xf002;" class="fa fa-2x" />
+        </form>
+        <div class="search-sp sp-only">
+          <a href=""><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!--メインエリア-->
+    <main>
+      <!--カテゴリーエリア-->
+      <section class="category" id="section">
+        <div class="inner">
+          <h2 class="sec-title">カテゴリーから探す</h2>
+          <div class="item-grid">
+            <div class="item">
+              <a href="#outer">
+                <img src="images/23930.png" alt="アウターのアイコン" />
+                <p>アウター</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#shirt">
+                <img src="images/4330.png" alt="シャツのアイコン" />
+                <p>シャツ</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#t-shirt">
+                <img src="images/269.png" alt="Tシャツのアイコン" />
+                <p>Tシャツ</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#pants">
+                <img src="images/34415.png" alt="パンツのアイコン" />
+                <p>パンツ</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#socks">
+                <img src="images/28257.png" alt="ソックスのアイコン" />
+                <p>ソックス</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#accessories">
+                <img src="images/1987.png" alt="アクセサリーのアイコン" />
+                <p>アクセサリー</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--アウターエリア-->
+      <section class="outer" id="outer">
+        <div class="inner">
+          <div class="section-title">
+            <h2>OUTER</h2>
+          </div>
+          <div class="shop-item-container">
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg"
+                alt="アウター"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アウター</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--シャツエリア-->
+      <section class="shirt" id="shirt">
+        <div class="inner">
+          <div class="section-title">
+            <h2>SHIRT</h2>
+          </div>
+          <div class="shop-item-container">
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img src="images/lisanto-ve2dwNxZ5Rg-unsplash.jpg" alt="シャツ" />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>シャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tシャツエリア-->
+      <section class="t-shirt" id="t-shirt">
+        <div class="inner">
+          <div class="section-title">
+            <h2>T SHIRT</h2>
+          </div>
+          <div class="shop-item-container">
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/mediamodifier-gEupiRvyxh0-unsplash.jpg"
+                alt="Tシャツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>Tシャツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--パンツエリア-->
+      <section class="pants" id="pants">
+        <div class="inner">
+          <div class="section-title">
+            <h2>PANTS</h2>
+          </div>
+          <div class="shop-item-container">
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/matt-moloney-YeGao3uk8kI-unsplash.jpg"
+                alt="パンツ"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>パンツ</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--ソックスエリア-->
+      <section class="socks" id="socks">
+        <div class="inner">
+          <div class="section-title">
+            <h2>SOCKS</h2>
+          </div>
+          <div class="shop-item-container">
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/sam-moqadam-Y0lUBKt-AZI-unsplash.jpg"
+                alt="ソックス"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>ソックス</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--アクセサリーエリア-->
+      <section class="accessories" id="accessories">
+        <div class="inner">
+          <div class="section-title">
+            <h2>ACCESSORIES</h2>
+          </div>
+          <div class="shop-item-container">
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="shop-item">
+              <img
+                src="images/martin-pechy-Vj6fYBwXcwc-unsplash.jpg"
+                alt="アクセサリー"
+              />
+              <a href=""><i class="fas fa-heart"></i></a>
+              <p>アクセサリー</p>
+              <p>￥1,500</p>
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <a class="back-to-top" href="index.html">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!--SNSエリア-->
+      <section class="follow-us" id="follow-us">
+        <div class="inner">
+          <h2 class="sec-title">FOLLOW US</h2>
+          <ul class="follow-ul">
+            <li class="line">
+              <a href=""><i class="fab fa-line"></i>LINE</a>
+            </li>
+            <li class="twitter">
+              <a href=""><i class="fab fa-twitter"></i>TWITTER</a>
+            </li>
+            <li class="instagram">
+              <a href=""><i class="fab fa-instagram"></i>INSTAGRAM</a>
+            </li>
+            <li class="facebook">
+              <a href=""><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+            </li>
+            <li class="youtube">
+              <a href=""><i class="fab fa-youtube"></i>YOUTUBE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-link">
+          <a href="#top"><i class="fas fa-angle-up"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <!--フッター-->
+    <footer class="footer">
+      <div class="container">
+        <a href="index.html"><i class="fas fa-cat"></i></a>
+        <nav class="menu-nav">
+          <ul class="menu-ul">
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p><small>Copyright &copy; SABANEKO</small></p>
+      </div>
+    </footer>
+
+    <!--jQueryの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--jQueryファイルの読み込み-->
+    <script src="./index.js"></script>
+  </body>
+</html>

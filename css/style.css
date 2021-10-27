@@ -1,0 +1,1000 @@
+@charset "utf-8";
+
+/*共通部分----------------------------------------------------------------------------------*/
+body {
+  font-family: "Noto Serif JP", serif;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.sp-only {
+  display: none;
+}
+
+/*TOP---------------------------------------------------------------------------------------*/
+
+/*First-view--------------------------------------------------------------------------------*/
+.first-view {
+  background: url(../images/pexels-sorapong-chaipanya-4530806.jpg) center/ cover
+    no-repeat;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+.first-view::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  z-index: -1;
+}
+/*Header------------------------------*/
+.header {
+  background-color: #333;
+  color: #fff;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+.header h1 {
+  font-size: 30px;
+  white-space: nowrap;
+}
+.header h1 a:hover {
+  color: #ccc;
+}
+.header .fa-cat {
+  margin-right: 10px;
+}
+.menu-nav {
+  margin-left: auto;
+}
+.menu-ul {
+  display: flex;
+  align-items: center;
+}
+.menu-ul li {
+  margin-left: 30px;
+}
+.menu-ul li a:hover {
+  color: #ccc;
+}
+/*Main-title------------------------------*/
+.main-title {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.main-title span {
+  font-size: 20px;
+}
+.main-title h2 {
+  font-size: 90px;
+}
+/*Down-btn--------------------------------*/
+.fa-angle-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.5s 0s ease;
+}
+.down-btn a i:hover {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+/*Main--------------------------------------------------------------------------------------*/
+/*New-item---------------------------------*/
+.new-item {
+  background-color: #ddd;
+  padding: 30px;
+}
+.inner {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sec-title {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px 0 60px 0;
+}
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.item {
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+.item img {
+  width: 100%;
+}
+/*More-btn*/
+.more-btn {
+  display: inline-block;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 15px 25px 15px 15px;
+  margin: 30px 0;
+  position: relative;
+  font-size: 18px;
+  transition: all 0.5s 0s ease;
+}
+.more-btn::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+}
+.more-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.more-btn:hover::after {
+  right: 3px;
+}
+/*Concept---------------------------------*/
+.concept {
+  padding: 30px;
+}
+.concept-wrapper {
+  display: flex;
+  text-align: left;
+}
+.concept-list {
+  width: 50%;
+  margin-right: 30px;
+}
+.concept-list dt {
+  border-bottom: 2px solid #333;
+  padding: 5px;
+  font-size: 20px;
+}
+.concept-list dd {
+  padding: 10px 10px 30px;
+  line-height: 25px;
+}
+.concept-wrapper img {
+  width: 50%;
+  border-radius: 50%;
+}
+/*News---------------------------------*/
+.news {
+  background-color: #ddd;
+  padding: 30px;
+}
+.news-item {
+  display: flex;
+  text-align: left;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 20px;
+}
+.news-item + .news-item {
+  margin-top: 20px;
+}
+.news-item img {
+  width: 30%;
+  height: 150px;
+  border: 0px solid #333;
+}
+.news-text {
+  width: 70%;
+  margin-left: 15px;
+}
+.news-text h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.news-text p {
+  line-height: 25px;
+}
+/*Follow-us-------------------------------*/
+.follow-us {
+  padding: 30px 30px 60px 30px;
+  position: relative;
+}
+.follow-ul li {
+  display: inline-block;
+  margin: 0 20px 30px 0;
+  border-top: 2px solid #333;
+  padding-top: 10px;
+  width: 136px;
+}
+.follow-ul li a {
+  transition: all 0.2s 0s ease;
+}
+.follow-ul .fab {
+  margin-right: 5px;
+  font-size: 25px;
+}
+.follow-ul .line a:hover {
+  color: #00b900;
+}
+.follow-ul .twitter a:hover {
+  color: #1da1f2;
+}
+.follow-ul .instagram a:hover {
+  color: #cf2e92;
+}
+.follow-ul .facebook a:hover {
+  color: #1877f2;
+}
+.follow-ul .youtube a:hover {
+  color: #da1725;
+}
+/*Top-link*/
+.top-link a {
+  background-color: #ddd;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 35px;
+  transition: all 0.5s 0s ease;
+  z-index: 3;
+}
+.top-link a:hover {
+  line-height: 45px;
+}
+
+/*Footer------------------------------------------------------------------------------------*/
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+.footer .container {
+  display: flex;
+  padding: 60px;
+}
+.footer .fa-cat {
+  font-size: 60px;
+}
+.footer .container a:hover {
+  color: #ccc;
+}
+.footer .menu-nav {
+  line-height: 60px;
+}
+/*Copyright----------------------------------*/
+.copyright {
+  background-color: #1a1a1a;
+  padding: 15px;
+  text-align: center;
+}
+
+/*SHOP--------------------------------------------------------------------------------------*/
+
+/*Shop-first-view---------------------------------------------------------------------------*/
+.shop-first-view {
+  background: url(../images/pexels-cottonbro-6069083.jpg) center / cover
+    no-repeat;
+  min-height: 350px;
+  position: relative;
+  z-index: 0;
+}
+.shop-first-view::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  z-index: -1;
+}
+.shop-first-view .main-title h2 {
+  font-size: 70px;
+}
+
+/*固定メニュー-------------------------------------------------------------------------------*/
+.floating-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 4;
+}
+.floating-menu .container {
+  position: relative;
+}
+/*お気に入り、ショップボタン*/
+.heart-shop {
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+.heart-shop a:nth-of-type(1) {
+  margin-right: 10px;
+}
+.heart-shop a .fas {
+  font-size: 30px;
+  transition: all 0.2s 0s ease;
+}
+.heart-shop a .fa-heart:hover {
+  color: #da1725;
+}
+.heart-shop a .fa-shopping-cart:hover {
+  color: #dabd17;
+}
+/*固定メニューアイコン*/
+.floating-menu-icon {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.floating-menu-icon h1 {
+  font-size: 20px;
+}
+/*検索ボックス*/
+.floating-menu form {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.search {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 36px;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
+}
+.search input[type="text"] {
+  position: absolute;
+  height: 29px;
+  top: 3px;
+  border: none;
+}
+.search input[type="text"]:focus {
+  outline: 0;
+}
+.search input[type="submit"] {
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-size: 23px;
+  border: none;
+  background: none;
+  color: #3879d9;
+  position: absolute;
+  width: 45px;
+  height: 53px;
+  right: 0;
+  top: -10px;
+  outline: none;
+}
+
+/*Main--------------------------------------------------------------------------------------*/
+/*Category--------------------------------------*/
+.category {
+  background-color: #ddd;
+  padding: 30px 30px 120px;
+}
+.category .item {
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+.category .item a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  transition: all 0.2s 0s ease;
+}
+.category .item a:hover {
+  opacity: 0.5;
+}
+.category .item img {
+  height: 230px;
+}
+.category .item p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+/*Outer----------------------------------------*/
+.outer {
+  padding: 90px 30px 60px 30px;
+}
+/*Section-title*/
+.section-title {
+  background: url(../images/kemal-alkan-_BDBEP0ePQc-unsplash.jpg) center / cover
+    no-repeat;
+  min-height: 200px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 20px;
+  filter: brightness(75%);
+  z-index: 1;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/*Shop-item*/
+.shop-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+}
+.shop-item {
+  position: relative;
+  margin: 10px;
+}
+.shop-item img {
+  width: 150px;
+  height: 200px;
+}
+.shop-item a:nth-of-type(1) {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 175px;
+  transition: all 0.2s 0s ease;
+}
+.shop-item a:hover:nth-of-type(1) {
+  color: #da1725;
+}
+.shop-item p {
+  text-align: left;
+}
+.shop-item a:nth-of-type(2) {
+  font-size: 22px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  transition: all 0.2s 0s ease;
+}
+.shop-item a:hover:nth-of-type(2) {
+  color: #dabd17;
+}
+/*Shirt----------------------------------------*/
+.shirt {
+  background-color: #ddd;
+  padding: 90px 30px 60px 30px;
+}
+/*Section-title*/
+.shirt .section-title {
+  background-image: url(../images/nimble-made-7RIMS-NMsbc-unsplash.jpg);
+}
+/*T-Shirt--------------------------------------*/
+.t-shirt {
+  padding: 90px 30px 60px 30px;
+}
+/*Section-title*/
+.t-shirt .section-title {
+  background-image: url(../images/keagan-henman-xPJYL0l5Ii8-unsplash.jpg);
+}
+/*Pants----------------------------------------*/
+.pants {
+  background-color: #ddd;
+  padding: 90px 30px 60px 30px;
+}
+/*Section-title*/
+.pants .section-title {
+  background-image: url(../images/jeans-428613_640.jpg);
+}
+/*Socks----------------------------------------*/
+.socks {
+  padding: 90px 30px 60px 30px;
+}
+.socks .shop-item img {
+  filter: brightness(85%);
+}
+/*Section-title*/
+.socks .section-title {
+  background-image: url(../images/sock-4330279_640.jpg);
+}
+/*Accessories----------------------------------*/
+.accessories {
+  background-color: #ddd;
+  padding: 90px 30px 60px 30px;
+}
+/*Section-title*/
+.accessories .section-title {
+  background-image: url(../images/mens-watch-4063031_640.jpg);
+}
+/*Back-to-top btn*/
+.back-to-top {
+  display: inline-block;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 15px 15px 15px 25px;
+  position: relative;
+  font-size: 18px;
+  transition: all 0.5s 0s ease;
+}
+.back-to-top::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f104";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+}
+.back-to-top:hover {
+  background-color: #333;
+  color: #fff;
+}
+.back-to-top:hover::before {
+  left: 3px;
+}
+
+/*About-----------------------------------------------------------------------------------*/
+
+/*About-first-view---------------------------------------------------------------------------*/
+.about-first-view {
+  background: url(../images/macro-3985602_1920.jpg) center / cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  z-index: 0;
+}
+.about-first-view::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  z-index: -1;
+}
+.about-first-view .main-title h2 {
+  font-size: 70px;
+}
+
+/*Main--------------------------------------------------------------------------------------*/
+/*About-area--------------------------------*/
+.about-area {
+  background-color: #ddd;
+  padding: 60px 30px;
+}
+/*About-img*/
+.about-img {
+  background: url(../images/background-96244_640.jpg) center / cover no-repeat;
+  max-width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+}
+.about-img h2 {
+  font-size: 50px;
+  color: #333;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/*About-text*/
+.about-text {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+/*News--------------------------------------------------------------------------------------*/
+
+/*News-first-view---------------------------------------------------------------------------*/
+.news-first-view {
+  background: url(../images/pexels-mentatdgt-1336873.jpg) center / cover
+    no-repeat;
+  min-height: 350px;
+  position: relative;
+  z-index: 0;
+}
+.news-first-view::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  z-index: -1;
+}
+.news-first-view .main-title h2 {
+  font-size: 70px;
+}
+
+/*Main--------------------------------------------------------------------------------------*/
+/*News-area----------------------------------*/
+.news-area {
+  background-color: #ddd;
+  padding: 60px 30px;
+}
+.news-area .item-grid {
+  margin-bottom: 30px;
+}
+.news-area .item-grid .item time {
+  display: block;
+  margin: 5px 0;
+  font-size: 13px;
+  color: #999;
+}
+
+/*Contact-----------------------------------------------------------------------------------*/
+
+/*Contact-first-view------------------------------------------------------------------------*/
+.contact-first-view {
+  background: url(../images/nimble-made-IyYreSBPUXw-unsplash.jpg) center / cover
+    no-repeat;
+  min-height: 350px;
+  position: relative;
+  z-index: 0;
+}
+.contact-first-view::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(75%);
+  z-index: -1;
+}
+.contact-first-view .main-title h2 {
+  font-size: 70px;
+}
+
+/*Main--------------------------------------------------------------------------------------*/
+/*contact-area--------------------------------------*/
+.contact-area {
+  background-color: #ddd;
+  padding: 60px 30px;
+}
+.form {
+  margin-bottom: 120px;
+}
+.form input,
+.form textarea {
+  display: block;
+  max-width: 800px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: left;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #999;
+}
+.form input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.form textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.form button {
+  display: block;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  background-color: #da6b64;
+  color: #fff;
+  border-radius: 35px;
+  border: none;
+  font-size: 23px;
+  letter-spacing: 10px;
+  cursor: pointer;
+  transition: all 0.2s 0s ease;
+}
+.form button:hover {
+  opacity: 0.8;
+}
+
+/*Media-------------------------------------------------------------------------------------*/
+
+@media (max-width: 620px) {
+  /*共通部分--------------------------------------------------------------------------------*/
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  .erase {
+    display: none;
+  }
+  .noscroll {
+    overflow: hidden;
+  }
+  .container {
+    padding: 0 15px;
+  }
+
+  /*Top-------------------------------------------------------------------------------------*/
+
+  /*First-view------------------------------------------------------------------------------*/
+  .first-view {
+    background: url(../images/pexels-sorapong-chaipanya-4530806.jpg) center/
+      cover no-repeat;
+    min-height: 600px;
+  }
+  /*Header-------------------------------------*/
+  .header h1 {
+    font-size: 25px;
+  }
+  /*ハンバーガーメニューのボタン*/
+  .burger-wrapper {
+    position: absolute;
+    right: 15px;
+  }
+  .burger-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: relative;
+    z-index: 900;
+    cursor: pointer;
+  }
+  .bar {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bar-top {
+    top: 13px;
+    transition: transform 0.3s;
+  }
+  .bar-mid {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bar-bottom {
+    bottom: 13px;
+    transition: transform 0.3s;
+  }
+  .burger-btn.close .bar-top {
+    transform: translate(-50%, 11px) rotate(45deg);
+    transition: transform 0.3s;
+  }
+  .burger-btn.close .bar-mid {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .burger-btn.close .bar-bottom {
+    transform: translate(-50%, -11px) rotate(-45deg);
+    transition: transform 0.3s;
+  }
+  /*ハンバーガーメニューの中身*/
+  .nav-wrapper {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+  .header-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+  }
+  .nav-list {
+    text-align: center;
+    padding-top: 100px;
+  }
+  .nav-list li {
+    margin-bottom: 80px;
+    font-size: 35px;
+  }
+  .nav-list li a:hover {
+    color: #ccc;
+  }
+  /*Main-title------------------------------*/
+  .main-title h2 {
+    font-size: 50px;
+  }
+  /*Concept---------------------------------*/
+  .concept-wrapper {
+    flex-direction: column;
+  }
+  .concept-list {
+    width: 100%;
+  }
+  .concept-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  /*News---------------------------------*/
+  .news-item {
+    flex-direction: column;
+  }
+  .news-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .news-text {
+    width: 100%;
+    margin: 0;
+  }
+  .news-text h3 {
+    margin: 10px 0 0;
+  }
+  .news-text p {
+    display: none;
+  }
+
+  /*Footer----------------------------------------------------------------------------------*/
+  .footer .container {
+    position: relative;
+    padding: 30px;
+  }
+  .footer .fa-cat {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer .menu-ul {
+    flex-direction: column;
+  }
+
+  /*Shop------------------------------------------------------------------------------------*/
+
+  /*Shop-first-view-------------------------------------------------------------------------*/
+  .shop-first-view .main-title h2 {
+    font-size: 50px;
+  }
+  /*固定メニュー-----------------------------------------------------------------------------*/
+  /*お気に入り、ショップボタン*/
+  .heart-shop {
+    left: 10px;
+    top: 10px;
+  }
+  .heart-shop a {
+    display: block;
+  }
+  .heart-shop a:nth-of-type(1) {
+    margin: 0 0 10px 0;
+  }
+  /*検索ボックス*/
+  .search-sp {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+  }
+  .search-sp a {
+    transition: all 0.2s 0s ease;
+  }
+  .search-sp a:hover {
+    color: #3879d9;
+  }
+  .search-sp a .fa-search {
+    font-size: 30px;
+  }
+
+  /*Main-----------------------------------------------------------------------------------*/
+  /*Outer--------------------------------------*/
+  .outer {
+    padding-top: 60px;
+  }
+  /*Section-title*/
+  .section-title h2 {
+    font-size: 30px;
+  }
+  /*Shirt----------------------------------------*/
+  .shirt {
+    padding-top: 60px;
+  }
+  /*T-Shirt--------------------------------------*/
+  .t-shirt {
+    padding-top: 60px;
+  }
+  /*Pants----------------------------------------*/
+  .pants {
+    padding-top: 60px;
+  }
+  /*Socks----------------------------------------*/
+  .socks {
+    padding-top: 60px;
+  }
+  /*Accessories----------------------------------*/
+  .accessories {
+    padding-top: 60px;
+  }
+
+  /*About-----------------------------------------------------------------------------------*/
+
+  /*About-first-view------------------------------------------------------------------------*/
+  .about-first-view .main-title h2 {
+    font-size: 50px;
+  }
+
+  /*Main------------------------------------------------------------------------------------*/
+  /*about-area-----------------------------------*/
+  .about-img h2 {
+    font-size: 30px;
+  }
+
+  /*News------------------------------------------------------------------------------------*/
+
+  /*News-first-view-------------------------------------------------------------------------*/
+  .news-first-view .main-title h2 {
+    font-size: 50px;
+  }
+
+  /*Contact---------------------------------------------------------------------------------*/
+
+  /*Contact-first-view----------------------------------------------------------------------*/
+  .contact-first-view .main-title h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 376px) {
+  /*Follow-us*/
+  .follow-ul li {
+    text-align: left;
+  }
+}
