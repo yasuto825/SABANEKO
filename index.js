@@ -1,7 +1,7 @@
 $(function () {
   //ページ内リンクのアニメーション
   $('a[href^="#"]').click(function () {
-    const speed = 500;
+    const speed = 300;
     const href = $(this).attr("href");
     const target = $(href == "#" || href == "" ? "html" : href);
     const position = target.offset().top;
@@ -12,16 +12,16 @@ $(function () {
   //ハンバーガーメニューのアニメーション
   $(".burger-btn").on("click", function () {
     $(".burger-btn").toggleClass("close");
-    $(".nav-wrapper").fadeToggle(500);
+    $(".nav-wrapper").fadeToggle(300);
     $("body").toggleClass("noscroll");
   });
 
   //ハンバーガーメニューに重なったアイテム消す処理
   $(".burger-btn").on("click", function () {
     $(
-      ".about-area,.floating-menu,.item,.section-title,.shop-item-container,.follow-us,.footer"
+      ".more-btn,.about-area,.floating-menu,.item,.section-title,.shop-item-container,.back-to-top,.follow-us,.footer"
     ).toggleClass("erase");
-    $("about-area").fadeToggle(500);
+    $("about-area").fadeToggle(300);
   });
 
   //固定メニューがフッター手前で消える処理
