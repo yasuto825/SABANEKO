@@ -1,7 +1,7 @@
 $(function () {
   //ページ内リンクのアニメーション
   $('a[href^="#"]').click(function () {
-    const speed = 300;
+    const speed = 500;
     const href = $(this).attr("href");
     const target = $(href == "#" || href == "" ? "html" : href);
     const position = target.offset().top;

@@ -17,8 +17,7 @@ body {
 
 /*First-view--------------------------------------------------------------------------------*/
 .first-view {
-  background: url(../images/pexels-sorapong-chaipanya-4530806.jpg) center/ cover
-    no-repeat;
+  background: url(../images/first-view.png) center/ cover no-repeat;
   min-height: 100vh;
   position: relative;
   z-index: 0;
@@ -295,8 +294,7 @@ body {
 
 /*Shop-first-view---------------------------------------------------------------------------*/
 .shop-first-view {
-  background: url(../images/pexels-cottonbro-6069083.jpg) center / cover
-    no-repeat;
+  background: url(../images/shop-first-view.png) center / cover no-repeat;
   min-height: 350px;
   position: relative;
   z-index: 0;
@@ -437,8 +435,7 @@ body {
 }
 /*Section-title*/
 .section-title {
-  background: url(../images/kemal-alkan-_BDBEP0ePQc-unsplash.jpg) center / cover
-    no-repeat;
+  background: url(../images/outer-view.png) center / cover no-repeat;
   min-height: 200px;
   border-radius: 20px;
   position: relative;
@@ -510,7 +507,7 @@ body {
 }
 /*Section-title*/
 .shirt .section-title {
-  background-image: url(../images/nimble-made-7RIMS-NMsbc-unsplash.jpg);
+  background-image: url(../images/shirt-view.png);
 }
 /*T-Shirt--------------------------------------*/
 .t-shirt {
@@ -518,7 +515,7 @@ body {
 }
 /*Section-title*/
 .t-shirt .section-title {
-  background-image: url(../images/keagan-henman-xPJYL0l5Ii8-unsplash.jpg);
+  background-image: url(../images/T-shirt-view.png);
 }
 /*Pants----------------------------------------*/
 .pants {
@@ -527,7 +524,7 @@ body {
 }
 /*Section-title*/
 .pants .section-title {
-  background-image: url(../images/jeans-428613_640.jpg);
+  background-image: url(../images/pants-view.png);
 }
 /*Socks----------------------------------------*/
 .socks {
@@ -538,7 +535,7 @@ body {
 }
 /*Section-title*/
 .socks .section-title {
-  background-image: url(../images/sock-4330279_640.jpg);
+  background-image: url(../images/socks-view.png);
 }
 /*Accessories----------------------------------*/
 .accessories {
@@ -547,7 +544,7 @@ body {
 }
 /*Section-title*/
 .accessories .section-title {
-  background-image: url(../images/mens-watch-4063031_640.jpg);
+  background-image: url(../images/clock-view.png);
 }
 /*Back-to-top btn*/
 .back-to-top {
@@ -580,7 +577,7 @@ body {
 
 /*About-first-view---------------------------------------------------------------------------*/
 .about-first-view {
-  background: url(../images/macro-3985602_1920.jpg) center / cover no-repeat;
+  background: url(../images/about-first-view.png) center / cover no-repeat;
   min-height: 350px;
   position: relative;
   z-index: 0;
@@ -606,7 +603,7 @@ body {
 }
 /*About-img*/
 .about-img {
-  background: url(../images/background-96244_640.jpg) center / cover no-repeat;
+  background: url(../images/about-img.png) center / cover no-repeat;
   max-width: 500px;
   height: 300px;
   margin: 0 auto;
@@ -632,8 +629,7 @@ body {
 
 /*News-first-view---------------------------------------------------------------------------*/
 .news-first-view {
-  background: url(../images/pexels-mentatdgt-1336873.jpg) center / cover
-    no-repeat;
+  background: url(../images/news-first-view.png) center / cover no-repeat;
   min-height: 350px;
   position: relative;
   z-index: 0;
@@ -671,8 +667,7 @@ body {
 
 /*Contact-first-view------------------------------------------------------------------------*/
 .contact-first-view {
-  background: url(../images/nimble-made-IyYreSBPUXw-unsplash.jpg) center / cover
-    no-repeat;
+  background: url(../images/contact-first-view.png) center / cover no-repeat;
   min-height: 350px;
   position: relative;
   z-index: 0;
