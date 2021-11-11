@@ -990,5 +990,18 @@ body {
   /*Follow-us*/
   .follow-ul li {
     text-align: left;
+    margin-right: 0;
+  }
+
+  .follow-ul li a .fab {
+    margin-right: 10px;
+  }
+
+  .follow-ul li a .fa-instagram {
+    margin-right: 15px;
+  }
+
+  .follow-ul li a .fa-facebook-f {
+    margin-right: 20px;
   }
 }
