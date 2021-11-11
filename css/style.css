@@ -216,19 +216,23 @@ body {
   padding: 30px 30px 60px 30px;
   position: relative;
 }
+.follow-ul {
+  display: flex;
+  justify-content: space-between;
+}
 .follow-ul li {
-  display: inline-block;
-  margin: 0 20px 30px 0;
-  border-top: 2px solid #333;
-  padding-top: 10px;
-  width: 136px;
+  margin: 0 auto 30px;
 }
 .follow-ul li a {
+  display: flex;
   transition: all 0.2s 0s ease;
 }
 .follow-ul .fab {
   margin-right: 5px;
   font-size: 25px;
+}
+.follow-ul li a p {
+  line-height: 1.7;
 }
 .follow-ul .line a:hover {
   color: #00b900;
@@ -986,22 +990,12 @@ body {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 680px) {
   /*Follow-us*/
-  .follow-ul li {
-    text-align: left;
-    margin-right: 0;
+  .follow-ul {
+    flex-direction: column;
   }
-
-  .follow-ul li a .fab {
-    margin-right: 10px;
-  }
-
-  .follow-ul li a .fa-instagram {
-    margin-right: 15px;
-  }
-
-  .follow-ul li a .fa-facebook-f {
-    margin-right: 20px;
+  .follow-ul li a {
+    flex-direction: column;
   }
 }
